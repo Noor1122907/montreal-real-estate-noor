@@ -99,8 +99,36 @@
     --accent-color: rgb(63, 77, 159);
     --highlight-color: #f3c;
   
-    --titles-font: "helvetica neue", helvetica, arial, sans-serif;
-    --bodytext-font: "helvetica neue", helvetica, arial, sans-serif;
+    --titles-font: Baskervville,"helvetica neue", helvetica, arial, sans-serif;
+    --bodytext-font: Rubik,"helvetica neue", helvetica, arial, sans-serif;
+
+
+/* 
+    .baskervville-regular {
+      font-family: "Baskervville", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    
+    .baskervville-regular-italic {
+      font-family: "Baskervville", serif;
+      font-weight: 400;
+      font-style: italic;
+    } */
+    
+
+    /* .rubik-<uniquifier> {
+      font-family: "Rubik", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: <weight>;
+      font-style: normal;
+    } */
+
+
+
+
+
+
 
 
    --footerNav-bg-color: rgb(255, 255, 255);
@@ -206,7 +234,15 @@ header .branding {
  aside {
     font-size: small;
  }
-  
+h1{}
+h2{}
+h3{}
+h4{}
+h5{}
+h6{}
+p {}
+ol {}
+ul {}
   figure {}
   
   figcaption {}
