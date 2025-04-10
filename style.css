@@ -148,17 +148,17 @@
 
 
   h1 { font-size: 2.5em; }
-  h2 { font-size: 2.1459em; }
-  h3 { font-size: 1.842em; }
-  h4 { font-size: 1.5811em; }
-  h5 { font-size: 1.3572em; }
-  h6 { font-size: 1.165em; }
-  p { font-size: 1em; }
+  h2 { font-size: 2.5em; }
+  h3 { font-size: 2.5em; }
+  h4 { font-size: 2.5em; }
+  h5 { font-size: 2.5em; }
+  h6 { font-size: 2.5em; }
+  p { font-size: 2em; }
   small { font-size: .8584em; }
   
   legend {font-size: 1.842em; }
   label {font-size: 1.581em;}
-  figcaption { font-size: .8584em;}
+  figcaption { font-size: 1em;}
   
  /*   ADJUST ABOVE VALUES ACCORDING TO YOUR FONT OF CHOICE, TESTED AT 320PX   
       ON THE ** WIDEST PAGE TITLE IN THE SITE **      */
@@ -183,19 +183,20 @@ header {
     background-color: var(--header-bg-color);
     color: var(--header-fg-color);
     display: flex;
+    font-size: medium;
     justify-content: space-between;
 }
   
 header .branding {
 	display: flex;
 	border: 1px solid red;
-	width: 60%;
+	width: 90%;
 	justify-content: space-between;
   max-width: 16.25rem;
 }
   
   img.custom-logo {
-    width: 3rem;
+    width: 6rem;
     height: auto;
   }
   /* CHANGE LOGO SIZE IN add_theme_support('custom-logo' IN FUNCTIONS.PHP ACCORDINGLY */
@@ -232,17 +233,17 @@ header .branding {
   
 
  aside {
-    font-size: small;
+    font-size: larger;
  }
-h1{}
-h2{}
-h3{}
-h4{}
-h5{}
-h6{}
-p {}
-ol {}
-ul {}
+h1{margin: 1rem 0rem ;}
+h2{margin: 1rem 0rem;}
+h3{margin: 1rem 0rem}
+h4{margin: 1rem 0rem}
+h5{margin: 1rem 0rem}
+h6{margin: 1rem 0rem}
+p {margin: 1rem 0rem}
+ol {margin: 1rem 0rem}
+ul {margin: 2rem 0rem}
   figure {}
   
   figcaption {}
@@ -285,7 +286,8 @@ ul {}
 
   footer {
     background-color: var(--footer-bg-color);
-    font-size: small;
+    font-size: medium;
+    color: rgb(18, 117, 204);
 }
 
 .footer-nav li a {
@@ -304,8 +306,8 @@ ul {}
   .businesscard {
     display: flex;
     flex-direction: column;
-    max-width: 90vw;
-    padding: 1rem;
+    max-width: 60vw;
+    padding: 9rem;
     margin: 1rem auto;
   }
 
@@ -357,7 +359,7 @@ ul#menu {
     /* Specific to hamburger menu */
       display: flex;
       justify-content: right;
-      margin: 0 1rem 1rem 0;
+      margin: 0 6rem 1rem 0;
   }
   
 .align-right button {
@@ -377,18 +379,18 @@ ul#menu {
     /* .show-nav class that javascript adds to force the menu to display when hamburger tapped  */
   
     display: block !important; /* Avoid using !important unless absolutely necessary, here menu MUST appear */
-    width: 80%; /* Adjust to taste */
+    width: 90%; /* Adjust to taste */
     margin: 0 auto; /* Show menu immediately under the header, no space, but centered */
-    padding: 2rem 0; /* Add space at top and bottom of menu box */
+    padding: 6rem 0; /* Add space at top and bottom of menu box */
   }
   
   ul#menu.show-nav li {
     /* Stacked links on mobile menu */
   
-    margin: 0 auto 1rem auto; /* Spaced apart for easy finger tapping */
+    margin: 6 auto 1rem auto; /* Spaced apart for easy finger tapping */
   
     /* border: 1px solid var(--pale-border); */
-    padding: 0.5rem 0 0.5rem 1rem;
+    padding: 0.8rem 0 8rem 1rem;
   }
   
   ul#menu.show-nav li:not(.submenu-parent) {
@@ -414,14 +416,14 @@ ul#menu {
 
 @media screen and (min-width: 60rem) {
 
-    h1 { font-size: 3em; }
-    h2 { font-size: 2.498em; }
-    h3 { font-size: 2.0801em; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 2rem; }
     h4 { font-size: 1.7321em; }
     h5 { font-size: 1.4422em; }
     h6 { font-size: 1.2009em; }
-    p { font-size: 1em; }
-    small { font-size: .8327em; }
+    p { font-size: 1rem; }
+    small { font-size: 1em; }
   /* READJUST FONT SCALE BECAUSE YOU HAVE MORE ROOM NOW */  
 
 
@@ -433,18 +435,18 @@ ul#menu {
 
 /* .flex-container {
     display: flex;
-    max-width: 60rem;
+    max-width: 90rem;
     border: 1px solid var(--border-color-light);
-    margin: 0 auto;
+    margin:  auto;
 } 
     
 main {
-    flex-basis: 70%;
+    flex-basis: 20%;
     background-color: white;
 }
 
 aside {
-    flex-basis: 30%;
+    flex-basis: 0%;
     background-color: #a8a8a8;
 } */
 
@@ -459,17 +461,18 @@ aside {
 .flex-container {
     display: flex;
     width: 100%;
-    padding-left: 15%; /* ADJUST TO TASTE */
-    padding-right: 15%; /* ADJUST TO TASTE */
+    padding-left: 18%; /* ADJUST TO TASTE */
+    padding-right: 18%; /* ADJUST TO TASTE */
     border: 1px solid var(--border-color-light);
     margin: 0 auto;
-    background-color: blue;
+    background-color: rgb(204, 240, 237);
+    text-emphasis-color: red;
 } 
 
 main {
-    width: 70%;
-    max-width: 90rem;
-    background-color: white;
+    width: 100%;
+    max-width: 100rem;
+    background-color: rgb(227, 251, 255);
 }
 
 aside {
@@ -484,8 +487,9 @@ aside {
 
 h1 {
     /* same width as flex-container, if placed outside of flex-container */
-    max-width: 60rem;
-    margin: 0 auto;
+    max-width: 90rem;
+    margin: auto
+    
 }
 
 .align-right, 
