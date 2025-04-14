@@ -156,9 +156,9 @@
   p { font-size: 2em; }
   small { font-size: .8584em; }
   
-  legend {font-size: 1.842em; }
-  label {font-size: 1.581em;}
-  figcaption { font-size: 1em;}
+  legend {font-size: 1.842em; } /* h3 */
+  label {font-size: 1.581em;} /* h4 */
+  figcaption { font-size: 1em;} /* small */
   
  /*   ADJUST ABOVE VALUES ACCORDING TO YOUR FONT OF CHOICE, TESTED AT 320PX   
       ON THE ** WIDEST PAGE TITLE IN THE SITE **      */
@@ -185,6 +185,8 @@ header {
     display: flex;
     font-size: medium;
     justify-content: space-between;
+
+    
 }
   
 header .branding {
@@ -234,16 +236,10 @@ header .branding {
 
  aside {
     font-size: larger;
+
+    
  }
-h1{margin: 1rem 0rem ;}
-h2{margin: 1rem 0rem;}
-h3{margin: 1rem 0rem}
-h4{margin: 1rem 0rem}
-h5{margin: 1rem 0rem}
-h6{margin: 1rem 0rem}
-p {margin: 1rem 0rem}
-ol {margin: 1rem 0rem}
-ul {margin: 2rem 0rem}
+
 
 
 
@@ -294,6 +290,8 @@ margin-left: 2rem}
   form input:last-child {}
   
   .copyright {}
+
+  
   address {
     line-height: 1.7;
 }
@@ -302,6 +300,13 @@ margin-left: 2rem}
     font-size: medium;
     color: rgb(18, 117, 204);
 }
+
+
+
+
+
+
+
 
 .footer-nav li a {
     font-family: var(--bodytext-font);
@@ -320,7 +325,7 @@ margin-left: 2rem}
     display: flex;
     flex-direction: column;
     max-width: 60vw;
-    padding: 9rem;
+    padding: 1rem;
     margin: 1rem auto;
   }
 
@@ -431,14 +436,6 @@ ul#menu {
 
 @media screen and (min-width: 60rem) {
 
-    h1 { font-size: 4em; }
-    h2 { font-size: 2em; }
-    h3 { font-size: 2rem; }
-    h4 { font-size: 1.7321em; }
-    h5 { font-size: 1em; }
-    h6 { font-size: 1.2009em; }
-    p { font-size: 1rem; }
-    small { font-size: 1em; }
   /* READJUST FONT SCALE BECAUSE YOU HAVE MORE ROOM NOW */  
 
 
@@ -476,23 +473,23 @@ aside {
 .flex-container {
     display: flex;
     width: 100%;
-    padding-left: 18%; /* ADJUST TO TASTE */
-    padding-right: 18%; /* ADJUST TO TASTE */
+    padding-left: 15%; /* ADJUST TO TASTE */
+    padding: inline 1px;
     border: 1px solid var(--border-color-light);
-    margin: 0 auto;
+    margin: 1px;;
     background-color: rgb(204, 240, 237);
     text-emphasis-color: red;
 } 
 
 main {
-  color: rgb(10, 10, 56);
+  color: rgb(27, 104, 108);
     width: 100%;
     max-width: 100rem;
     background-color: rgb(227, 251, 255);
 }
 
 aside {
-    width: 30%;
+    width: 60%;
     background-color: #a8a8a8;
 }
 
